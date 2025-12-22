@@ -8,10 +8,10 @@
     "start": "next start"
   },
   "dependencies": {
-    "framer-motion": "^10.18.0",
+    "framer-motion": "^12.23.26",
     "next": "^13.5.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/node": "25.0.3",
