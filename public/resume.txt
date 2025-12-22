@@ -1,0 +1,58 @@
+Osamah Ashraf
+Software Engineer
+github.com/Osamah3 | linkedin.com/in/Osamah-ashraf | osamahashrafcwork@gmail.com | +923054628733
+
+Experience
+Cybersoft North America Inc
+Software Engineer
+• Designed and maintained robust .NET APIs and enterprise-grade applications.
+• Developed and optimized Angular front-end components integrated with .NET APIs.
+• Built scalable, serverless workflows using Azure Functions.
+• Worked with Azure DevOps for CI/CD pipelines and deployment workflows.
+• Followed the Agile Scrum methodology with story-point estimation, sprint planning, and retrospectives.
+• Collaborated in cross-functional teams delivering full-stack solutions with Angular + .NET.
+
+RootPointers
+Junior Software Engineer
+• Built a Social Media app backend using RabbitMQ for scalable message queuing.
+• Developed APIs and microservices using Node.js and Django (Python) for business logic.
+• Worked on React.js front-end components connected to Node/Django backends.
+• Developed Shopify-integrated apps using GraphQL APIs.
+• Created a task management system with Hangfire for job scheduling.
+• Responsible for database optimization, debugging, and backend architecture.
+
+Education
+FAST NUCES
+BS – Computer Science
+
+Projects
+E4Score – Real-Time IoT Shipment & Fleet Monitoring System
+• Engineered a highly available backend to ingest and process real-time IoT data from trucking devices over UDP.
+• Developed Azure Function Apps to decode, filter, and persist telemetry events received every second.
+• Built dashboards in Angular for administrators to monitor shipment health, location, and alerts.
+• Ensured efficient storage and retrieval of event data for millions of signals per day.
+• Delivered live updates using SignalR for real-time monitoring.
+• Applied Clean Architecture and Domain-Driven Design (DDD) for scalability and flexibility.
+
+SynapticFlow – Business Strategy & Goal Tracking Platform
+• Built backend logic in .NET Core, Node.js, and Django for managing strategic goals and improvement priorities.
+• Designed React.js front-end for interactive dashboards and strategic planning tools.
+• Integrated strategic methodologies like X-Matrix, A3 Reports, and Bowler Charts.
+• Implemented flexible Role-Based Access Control (RBAC) for multi-level user management.
+• Applied CQRS to separate business logic for optimized performance and scalability.
+• Used SignalR for real-time collaborative planning sessions.
+
+Skills / Technologies
+• Languages: C#, Python, JavaScript, TypeScript, SQL
+• Frameworks/Technologies: .NET Core, Angular, React.js, Node.js, Django, ASP.NET, Entity Framework, SignalR, MediatR, Hangfire, Firebase, RabbitMQ
+• Tools: Azure DevOps, Git, Postman, Redis, XUnit, Swagger
+• Database Systems: Microsoft SQL Server, PostgreSQL, Firebase Realtime DB
+• Architecture Patterns: Clean Architecture, CQRS, n-Layered Architecture, DDD
+• Cloud DevOps: Azure Functions, Azure Blob Storage, AWS S3 Buckets
+• Other: Shopify GraphQL API, RESTful APIs, JWT Auth, Real-Time Systems, Background Job Processing
+
+Angular Developer — 4 years experience
+
+Replace this file with your actual PDF at `public/resume.pdf` or update the link in the header.
+
+Contact: you@example.com

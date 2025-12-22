@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --bg:#0b1220; /* deep navy */
+  --fg:#e6eef8; /* light foreground */
+  --muted:#94a3b8; /* muted text */
+  --card:#0f1724; /* card surface */
+  --border:rgba(255,255,255,0.04);
+}
+
+@layer base {
+  html, body { height: 100%; }
+  body {
+    margin: 0;
+    font-family: Inter, system-ui, 'Segoe UI', Roboto, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  a { color: inherit; }
+}
+
+@layer components {
+  .container { max-width: 900px; margin: 2rem auto; @apply px-4 sm:px-6 lg:px-8; }
+    /* Standard page section spacing for consistent vertical rhythm.
+      Reduced top padding to tighten hero spacing. */
+    .page-section { @apply pt-8 sm:pt-10 pb-8 sm:pb-12; }
+  .page-title { @apply text-3xl font-bold mb-4; }
+  .site-header { background: transparent; border-bottom: 1px solid rgba(255,255,255,0.03); }
+  .header-inner { display:flex; align-items:center; justify-content:space-between; padding:1rem; }
+  .brand { margin:0; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:1rem; }
+  .card { background: var(--card); padding:1rem; border-radius:10px; border:1px solid var(--border); box-shadow: 0 6px 18px rgba(2,6,23,0.35); }
+  .muted { color: var(--muted); }
+  .site-footer { margin-top:3rem; padding:1rem 0; text-align:center; color:var(--muted); }
+}
+
+@layer utilities {
+  .fade-in { animation: fadeIn 480ms ease-out both; }
+  .float-up { animation: floatUp 420ms ease-out both; }
+  .shimmer { background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,0.5), rgba(255,255,255,0)); background-size: 200% 100%; animation: shimmer 1.6s linear infinite; }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(6px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes floatUp {
+  0% { transform: translateY(8px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
