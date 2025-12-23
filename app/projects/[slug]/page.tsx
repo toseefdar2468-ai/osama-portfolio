@@ -1,5 +1,5 @@
-import projects from '../../../../lib/projects'
-import AnimatedContainer from '../../../../components/AnimatedContainer'
+import projects from '../../../lib/projects'
+import AnimatedContainer from '../../../components/AnimatedContainer'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 
