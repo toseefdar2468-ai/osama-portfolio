@@ -14,7 +14,7 @@ export default function Header() {
       transition={{ duration: 0.5, ease: 'easeOut' }}
     >
       <div className="container header-inner">
-        <h3 className="brand text-xl font-semibold tracking-tight">Osamah Ashraf</h3>
+        <h3 className="brand text-lg font-semibold tracking-tight">Osamah Ashraf</h3>
 
         <nav className="hidden md:flex items-center gap-4 text-sm">
           <Link href="/" className="hover:text-primary transition">Home</Link>

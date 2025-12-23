@@ -1,16 +1,20 @@
 import projects from '../lib/projects'
 import ProjectCard from '../components/ProjectCard'
 import AnimatedContainer from '../components/AnimatedContainer'
+import AnimatedAvatar from '../components/AnimatedAvatar'
 import ContactForm from './contact/ContactForm'
 
 export default function Home() {
   return (
     <>
       <AnimatedContainer className="page-section">
-        <div className="space-y-2">
-          <h1 className="page-title">Hi — I'm Osama Asharaf</h1>
-          <p className="text-slate-300">I’m an Angular developer with ~4 years of experience building SPAs, component libraries, and enterprise features.</p>
-          <p><a href="/resume.txt" className="text-primary hover:underline">Download my resume</a></p>
+        <div className="flex flex-col md:flex-row-reverse items-center gap-6">
+          <AnimatedAvatar src="/osama-img.jpeg" size={160} outline={false} />
+          <div className="space-y-2 max-w-2xl">
+            <h1 className="page-title">Hi — I'm Osama Asharaf</h1>
+            <p className="text-slate-300">I’m an Angular developer with ~4 years of experience building SPAs, component libraries, and enterprise features.</p>
+            <p><a href="/resume.txt" className="text-primary hover:underline">Download my resume</a></p>
+          </div>
         </div>
       </AnimatedContainer>
 
@@ -25,27 +29,10 @@ export default function Home() {
 
       <AnimatedContainer className="page-section">
         <h2 className="page-title">Projects (Highlights)</h2>
-        <div className="space-y-6 text-slate-300">
-          <div>
-            <h4 className="text-lg font-semibold text-slate-100">E4Score — Real-Time IoT Shipment & Fleet Monitoring System</h4>
-            <ul className="list-disc pl-5 mt-2">
-              <li>Engineered a highly available backend to ingest and process real-time IoT data from trucking devices over UDP.</li>
-              <li>Developed Azure Function Apps to decode, filter, and persist telemetry events received every second.</li>
-              <li>Built dashboards in Angular for administrators to monitor shipment health, location, and alerts.</li>
-              <li>Ensured efficient storage and retrieval of event data for millions of signals per day; delivered live updates using SignalR.</li>
-              <li>Applied Clean Architecture and Domain-Driven Design (DDD) for scalability and flexibility.</li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-lg font-semibold text-slate-100">SynapticFlow — Business Strategy & Goal Tracking Platform</h4>
-            <ul className="list-disc pl-5 mt-2">
-              <li>Built backend logic in .NET Core, Node.js, and Django for managing strategic goals and improvement priorities.</li>
-              <li>Designed React.js front-end for interactive dashboards and strategic planning tools.</li>
-              <li>Integrated strategic methodologies like X-Matrix, A3 Reports, and Bowler Charts.</li>
-              <li>Implemented RBAC, CQRS, and SignalR for real-time collaborative sessions.</li>
-            </ul>
-          </div>
+        <div className="grid">
+          {projects.map((p) => (
+            <ProjectCard key={p.slug} project={p} />
+          ))}
         </div>
       </AnimatedContainer>
 
